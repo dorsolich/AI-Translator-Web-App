@@ -13,6 +13,7 @@ def index_post():
     original_text = request.form['text']
     target_language = request.form['language']
 
+    # Initialize the translation 
     model = Translate()
     model.transform(
         text=original_text,
